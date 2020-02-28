@@ -1,18 +1,27 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div id="nav">
+      <hr>
+      <h1>Список задач</h1>
+      <hr>
+      <router-link to="/">Главная</router-link> |
+      <router-link to="/archive">Архивные</router-link>
+    </div>
+    <CompletedTodos></CompletedTodos>
+    <GetTodo></GetTodo>
+    <CurrentTodos></CurrentTodos>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import GetTodo from '../components/GetTodo.vue'
+import CurrentTodos from '../components/CurrentTodos.vue'
+import CompletedTodos from '../components/CompletedTodos.vue'
 export default {
-  name: 'Home',
   components: {
-    HelloWorld
+    GetTodo,
+    CurrentTodos,
+    CompletedTodos
   }
 }
 </script>
