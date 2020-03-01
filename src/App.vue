@@ -6,35 +6,35 @@
 
 <style lang="scss">
 
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  box-sizing: border-box;
-}
-
-#nav {
-  padding: 30px 5px;
-
-  a {
-    font-weight: bold;
+  #app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
     color: #2c3e50;
+    box-sizing: border-box;
+  }
 
-    &.router-link-exact-active {
-      color: #42b983;
+  #nav {
+    padding: 30px 5px;
+
+    a {
+      font-weight: bold;
+      color: #2c3e50;
+
+      &.router-link-exact-active {
+        color: #42b983;
+      }
     }
   }
-}
 
-.list-group {
+  .list-group {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding-inline-start: 0;
   }
-  
+
   .list-group-item {
     width: 75%;
     border: 1px solid #ccc;
@@ -67,6 +67,7 @@
     border: none;
     color: #fff;
     background: red;
+    margin-right: 0;
   }
 
   .archived {

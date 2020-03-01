@@ -4,7 +4,7 @@
     <ul class="list-group">
       <li class="list-group-item" v-for="todo in todos" :key="todo.id">
         <span class="list-group-item-text">{{todo.body}}</span>
-        <span class="list-group-item-time">{{todo.date}}</span>
+        <span class="list-group-item-time">Добавлено {{todo.date}}</span>
         <div class="btn-group">
           <button
             type="button"
