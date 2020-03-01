@@ -22,7 +22,7 @@ export default new Vuex.Store({
         body: state.newTodo,
         completed: false,
         archived: false,
-        date: new Date()
+        date: new Date().toLocaleString()
       })
     },
     EDIT_TODO (state, todo) {
